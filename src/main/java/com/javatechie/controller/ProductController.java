@@ -29,7 +29,7 @@ public class ProductController {
 
     @PostMapping
     public ResponseEntity<APIResponse> createNewProduct(@RequestBody @Valid ProductRequestDTO productRequestDTO) {
-
+//
         log.info("ProductController::createNewProduct request body {}", ValueMapper.jsonAsString(productRequestDTO));
 
         ProductResponseDTO productResponseDTO = productService.createNewProduct(productRequestDTO);
