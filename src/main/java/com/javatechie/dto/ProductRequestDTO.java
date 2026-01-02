@@ -17,6 +17,8 @@ public class ProductRequestDTO {
     @NotBlank(message = "product name shouldn't be NULL OR EMPTY")
     private String name;
 
+    ///
+
     private String description;
 
     @NotBlank(message = "product type shouldn't be NULL OR EMPTY")
