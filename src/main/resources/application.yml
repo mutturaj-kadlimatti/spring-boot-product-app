@@ -1,28 +1,22 @@
-#DataSource Configuration
 spring:
   datasource:
-    driver-class-name:  com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/javatechie
-    username: root
-    password: ENC(IjAepkeQBrUb1E2fx9/GbWwIXW+QlMSu)
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 12
 
-# JPA Configuration
   jpa:
     hibernate:
       ddl-auto: update
-      naming:
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: true
-    defer-datasource-initialization: true
-
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL5Dialect
-        format_sql : true
+        dialect: org.hibernate.dialect.H2Dialect
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
 
 server:
   port: 9191
-
-
-# EMAIL config
-
