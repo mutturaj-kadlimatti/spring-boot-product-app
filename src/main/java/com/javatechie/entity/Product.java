@@ -23,5 +23,5 @@ public class Product {
     private double price;
     private String supplierName;
     private String supplierCode;
- //   /// before rollback
+ // k  /// before rollback
 }
