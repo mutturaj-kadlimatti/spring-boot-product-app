@@ -25,7 +25,7 @@ public class ProductController {
     public static final String SUCCESS = "Success";
     private ProductService productService;
 
-///
+// mutturaj
 
     @PostMapping
     public ResponseEntity<APIResponse> createNewProduct(@RequestBody @Valid ProductRequestDTO productRequestDTO) {
