@@ -41,7 +41,6 @@ public class ProductController {
                 .results(productResponseDTO)
                 .build();
 
-        log.info("ProductController::createNewProduct response {}", ValueMapper.jsonAsString(responseDTO));
 
         return new ResponseEntity<>(responseDTO, HttpStatus.CREATED);
     }
@@ -56,7 +55,7 @@ public class ProductController {
                 .status(SUCCESS)
                 .results(products)
                 .build();
-
+//
         log.info("ProductController::getProducts response {}", ValueMapper.jsonAsString(responseDTO));
 
         return new ResponseEntity<>(responseDTO, HttpStatus.OK);
